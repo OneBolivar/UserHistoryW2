@@ -1,4 +1,5 @@
 from Option1 import OptionNumber1
+
 def MenuOptions():
     VALIDATOR = True
     while VALIDATOR:
@@ -22,6 +23,10 @@ def MenuOptions():
                     OptionNumber1(Options)
                 elif Options == 2:
                     print("AQUI VA LA OPCION 2")
+                elif Options == 3:
+                    print("AQUI VA LA OPCION 3")
+                elif Options == 4:
+                    print("AQUI VA LA OPCION SALIR")                
          
         #------------------------------------------------------------        
         except ValueError:
