@@ -18,8 +18,10 @@ def MenuOptions():
                 print("      ")
                 if (Options < 0) or (Options > 4):
                     int("Force Error") 
-                else:
+                elif Options == 1:
                     OptionNumber1(Options)
+                elif Options == 2:
+                    print("AQUI VA LA OPCION 2")
          
         #------------------------------------------------------------        
         except ValueError:
