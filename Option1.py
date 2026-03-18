@@ -1,13 +1,13 @@
 def OptionNumber1(Options): # Define la función que recibe la opción elegida
     Inventory= {} # Crea un diccionario vacío para almacenar los datos del nuevo producto
-    if Options == 1: # Verifica si la opción seleccionada es efectivamente la 1
-        VALIDATOR_NAME = True # Variable de control para el bucle de validación del nombre
-        while VALIDATOR_NAME: # Inicia bucle que se repite hasta obtener un nombre válido
+    if Options == 1: 
+        VALIDATOR_NAME = True 
+        while VALIDATOR_NAME: 
                 product_name = input("Enter the product name: ").strip() # Pide el nombre y elimina espacios extras
                 if product_name == "": # Valida si el nombre está vacío
                     print("ERROR! Name cannot be empty. ") # Muestra error si no se escribió nada
                 else:
-                    VALIDATOR_NAME = False # Cambia el estado para salir del bucle del nombre
+                    VALIDATOR_NAME = False 
     #------------------------------------------------------------
         VALIDATOR_PRICE = True # Variable de control para el bucle de validación del precio
         while VALIDATOR_PRICE: # Inicia bucle para asegurar que el precio sea correcto
