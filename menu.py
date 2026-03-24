@@ -39,4 +39,4 @@ def MenuOptions():
             print("---------------------------------------") 
             print("Error only shows the displayed options") # Mensaje de error al usuario
             print("---------------------------------------") 
-            print("     ") 
+            print("    ") 
