@@ -39,9 +39,9 @@ def MenuOptions():
                     if resultado != {}:
                         print(f"Product Found: {resultado}")
                     else:
-                        print("El producto no existe.")
+                        print("The product doesn't exist in the inventory")
                 elif Options == 4:
-                    name = input("¿Qué producto quieres actualizar?: ")
+                    name = input("What product do you want to update?: ")
                     Option4.product_update(name)
                 elif Options == 5:
                     Option5.product_delete()

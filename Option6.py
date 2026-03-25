@@ -12,8 +12,8 @@ def calculate_statistics(): # Define la función para calcular y mostrar estadí
         total_products += details['quantity']
     print("") # Imprime una línea en blanco para mejorar el formato
     print("---------------------------------------------------------") # Imprime una línea divisoria
-    print("El total a pagar es de: ", total) # Muestra el valor total acumulado de todo el inventario
-    print("El total de productos que hay en el inventario es de: ", total_products)
+    print("Total sales: ", total) # Muestra el valor total acumulado de todo el inventario
+    print("Total products:", total_products)
     print("---------------------------------------------------------") # Imprime otra línea divisoria
     print("") # Imprime una línea en blanco final
     return # Finaliza la ejecución de la función y regresa al menú principal
