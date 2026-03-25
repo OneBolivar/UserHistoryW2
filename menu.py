@@ -20,16 +20,21 @@ def MenuOptions():
             while VALIDATOR_OPTIONS: 
                 Options = float(input("What do you want to do?: "))
                 print("      ") 
-                if (Options <= 0) or (Options > 4): 
+                if (Options <= 0) or (Options > 7): 
                     int("Force Error") # Si el número es inválido, fuerza un error para ir al except
                 elif Options == 1: 
                     Option2.Inventory.update(OptionNumber1(Options)) # Actualiza el inventario con lo que retorne OptionNumber1
-                    
                 elif Options == 2: 
                     inventory_print() # Llama a la función que muestra los productos en pantalla
                 elif Options == 3:
+                    print("Aqui va la opcion buscar producto")
+                elif Options == 4:
+                    print("Aqui va la opcion actualizar producto")                
+                elif Options == 5:
+                    print("Aqui va la opcion eliminar producto")
+                elif Options == 6:
                     calculate_statistics() # Ejecuta la función que procesa los datos numéricos
-                elif Options == 4: 
+                elif Options == 7: 
                     print("Muchas gracias por usar nuestro sistema, tenga un bonito dia") 
                     VALIDATOR_OPTIONS = False
                     VALIDATOR = False
