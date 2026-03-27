@@ -6,6 +6,7 @@ import Option4 # Importa el módulo Option4 completo para acceder a sus variable
 import Option5 # Importa el módulo Option5 completo para acceder a sus variables    
 from Option6 import calculate_statistics # Importa la función de estadísticas del módulo Option3
 from Option7 import save_csv
+from Option8 import upload_inventory_csv
 
 
 
@@ -33,7 +34,7 @@ def MenuOptions():
             while VALIDATOR_OPTIONS: 
                 Options = float(input("What do you want to do?: "))
                 print("      ") 
-                if (Options <= 0) or (Options > 7): 
+                if (Options <= 0) or (Options > 9): 
                     int("Force Error") # Si el número es inválido, fuerza un error para ir al except
                 elif Options == 1: 
                     OptionNumber1(Inventory, Inventory_to_csv) 
@@ -57,7 +58,7 @@ def MenuOptions():
                 elif Options == 7:
                    print(save_csv( Inventory_to_csv))
                 elif Options == 8:
-                    print("upload csv")                                    
+                    upload_inventory_csv(Inventory)                                   
                 elif Options == 9: 
                     print("Thank you so much for using our system, have a nice day") 
                     VALIDATOR_OPTIONS = False
